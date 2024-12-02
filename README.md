@@ -1,47 +1,74 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Welcome to Expo app: iLLubank 👋
 
 ## Get started
 
-1. Install dependencies
+<h1 align="center"> iLLuBank </h1>
+<p align="center">
+    <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-   ```bash
-   npm install
-   ```
+# Comandos mais utilizados
+cd %USERPROFILE%
+git init
+git add .
+git commit -m "Primeiro commit"
+git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+git branch -M main # Define o branch principal como "main"
+git push -u origin main
 
-2. Start the app
+# Referências
 
-   ```bash
-    npx expo start
-   ```
+Tutorial: **https://docs.expo.dev/tutorial/create-your-first-app/**
 
-In the output, you'll find options to open the app in a
+Tutorial: **https://docs.expo.dev/tutorial/eas/android-production-build/**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Tutorial: **https://www.youtube.com/watch?v=a0KJ7l5sNGw**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Instalar Git: **https://git-scm.com/downloads**
 
-## Get a fresh project
+Instalar Node: **https://nodejs.org/en**
 
-When you're ready, run:
+Instalar Expo: **https://docs.expo.dev/get-started/set-up-your-environment/**
 
-```bash
-npm run reset-project
-```
+Conta Firebase: **https://console.firebase.google.com/**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Criar uma conta Expo
 
-## Learn more
+# Criação do projeto
+1. Criar projeto: **npx create-expo-app@latest illubank**
+2. Resetar projeto exemplo: **npm run reset-project**
+3. Iniciar: **npx expo start**
 
-To learn more about developing your project with Expo, look at the following resources:
+npx expo install --fix
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Vincular o projeto ao EAS
+1. Instalar biblioteca: **npx expo install expo-dev-client**
+2. Instalar EAS:  **npm install -g eas-cli**
+3. Realizar login: **eas login**
+4. Cadastro no GIT:
+5. Inicializar EAS: **eas init**
+   - Modifica app.json para incluir extra.eas.projectIde atualiza seu valor com o ID exclusivo (ID: 0525e414-9b79-410a-823d-cdebc09b069e)
+6. Configurar projeto: **eas build:configure**
+   - Cria eas.json na raiz do diretório
+  
+# Compilação para o perfil de desenvolvimento
+1. **eas build --platform android --profile development**
+2. **npx expo start**
+# Compilação de distribuição interna
+1. **eas build --platform android --profile preview**
 
+# Bibliotecas secundárias
+1. **npx expo install expo-image**
+2. **npx expo install expo-location**
+3. **npx expo install expo-local-authentication**
+   
+# Banco de dados na núvem - Firebase
+1. **npx expo install firebase**
+2. **npx expo customize metro.config.js**
+3. **npx expo install react-native-screens react-native-safe-area-context**
+4. **npx expo install @react-native-async-storage/async-storage**
+5. **npm install @react-native-async-storage/async-storage**
+   
 ## Join the community
 
 Join our community of developers creating universal apps.
