@@ -7,12 +7,7 @@ import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjyfbAlo23hMbHfELG2Pa0juignmeiVQk",
-  authDomain: "illubank-e7c22.firebaseapp.com",
-  projectId: "illubank-e7c22",
-  storageBucket: "illubank-e7c22.firebasestorage.app",
-  messagingSenderId: "429686383305",
-  appId: "1:429686383305:web:888cd056ae69e2f8076318"
+
 };
 
 // Initialize Firebase
