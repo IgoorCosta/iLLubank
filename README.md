@@ -5,11 +5,17 @@
 
 # Comandos mais utilizados
 cd %USERPROFILE%
+
 git init
+
 git add .
+
 git commit -m "Primeiro commit"
+
 git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+
 git branch -M main # Define o branch principal como "main"
+
 git push -u origin main
 
 # Referências
